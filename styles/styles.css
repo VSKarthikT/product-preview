@@ -1,0 +1,154 @@
+/* boiler plate styles */
+:root{
+  --white: #FFFFFF;
+  --cream_bg: #F2EAE2;
+  --aurometal: #6C7289;
+  --deep_auqamarine: #3D8168;
+  --deep_auqamarine_hover: #1A4032;
+  --gunmetal :#1C232B;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: var(--cream_bg);
+}
+body h1, body h2, body h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+main{
+  border-radius: 10px;
+}
+
+/* Mobile styles */
+.perfume_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 343px;
+  max-height: 611px;
+  border-radius: 10px;
+  background-color: var(--white);
+  overflow: hidden;
+}
+.Textbox{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 1.25rem;
+  gap:15px;
+}
+/* Desktop Styles */
+@media (min-width: 50em){
+  .perfume_container{
+    max-width: 600px;
+    max-height: 450px;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .Textbox{
+    max-width: 300px;
+    max-height: 450px;
+    padding: 30px;
+    gap: 20px;
+  }
+
+}
+/* Main Styles */
+
+.main_heading_title {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--aurometal);
+  line-height: auto;
+  letter-spacing: 5px;
+}
+.Textbox > *{
+  margin: 0;
+  padding: 0;
+}
+.Textbox h1{
+  font-family: "Fraunces", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem; 
+  line-height: 32px;
+  letter-spacing: 0;
+}
+.textbox_dec{
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem; 
+  font-weight: 500;
+  color:var(--aurometal) ;
+  line-height: 23px;
+  letter-spacing: 0;
+
+}
+/* Price box */
+.Price_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:19px;
+  height: auto;
+}
+
+.Price_container p:nth-of-type(1){
+  font-family: "Fraunces", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--deep_auqamarine);
+  line-height: 2rem;
+  letter-spacing: 0;
+  margin: 0;
+}
+.Price_container p:nth-of-type(2){
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: var(--aurometal);
+  text-decoration: line-through;
+}
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--deep_auqamarine);
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  color: var(--white);
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: var(--deep_auqamarine_hover);
+}
+.button.icon{
+  width: 14.39px;
+  height: 16px;
+}
